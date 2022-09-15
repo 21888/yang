@@ -1,0 +1,14 @@
+type (
+	ComeReq {
+		Token string `json:"token"`
+	}
+	ComeResp {
+		Code int    `json:"code"`
+		Msg  string `json:"msg"`
+	}
+)
+
+service yang-api {
+	@handler ComeHandler
+	post /chabai/v1 (ComeReq) returns (ComeResp)
+}

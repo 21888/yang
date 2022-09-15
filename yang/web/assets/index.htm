@@ -1,0 +1,68 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羊了个羊在线刷榜小工具</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.12.0/js/md5.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css" integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+    <script src="mdui.min.js" integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="oneui.css">
+    <img style="background: linear-gradient(to bottom,#104E8B,#9FB6CD);" class="full-bg full-bg-bottom" ondragstart="return false;" oncontextmenu="return false;">
+
+</head>
+
+<body>
+<br>
+<div class="container">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 center-block" style="float: none;">
+        <div class="panel panel-primary">
+            <div class="panel-heading" style="text-align: center;"><h3 class="panel-title">
+                羊了个羊</h3>
+            </div>
+            <div class="panel-body" style="text-align: center;">
+
+                <div class="list-group">
+
+                    <div id="login" class="list-group-item">
+                        <div class="form-group">
+                            <div class="input-group"><div class="input-group-addon">Token</div>
+                                <input type="text" id="uin" value="" class="form-control">
+                            </div></div>
+                        <div class="input-group"><div class="input-group-addon">通关次数</div>
+                            <input id="num" value="1" oninput="value=value.replace(/[^\d]/g,'');if(value>1000)value=1000" class="form-control">
+                        </div></div>
+                    <button type="button" id="submit" class="mdui-btn mdui-btn-block mdui-color-blue-100 mdui-ripple mdui-btn-raised">立即通关</button>
+
+                </div>
+                <div class="list-group">
+
+                </div>
+                <div class="mdui-table-fluid" id="liebiao" >
+                    <textarea id="log" class="form-control" rows="10" readonly></textarea>
+                </div>
+            </div>
+            <center><h1>防止和谐，请务必复制网址到浏览器打开！</h1></center>
+            <center><h1><a href="https://jq.qq.com/?_wv=1027&k=IyM8tjjN" target="_blank" style="color:red">点我加入交流群</a></h1></center>
+            <center><h2><a href="https://jq.qq.com/?_wv=1027&k=IyM8tjjN" target="_blank" style="color:red">IOS教程</a></h2></center>
+            <center><h2><a href="https://jq.qq.com/?_wv=1027&k=IyM8tjjN" target="_blank" style="color:red">安卓教程</a></h2></center>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    // 统计代码
+</script>
+<script src="ajax.js?ver=22"></script>
+
+</html>
