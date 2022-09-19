@@ -32,4 +32,15 @@ Android IOS需使用抓包软件
 Android 7.0还是几点0以上好像没办法安装证书 就没办法解密 https
 
 # 免token uid模式
-...
+```
+// 1.获取openid - get请求
+https://cat-match.easygame2021.com/sheep/v1/game/user_info?uid=66666666&t=token
+// 2.拿到openid - post json
+https://cat-match.easygame2021.com/sheep/v1/user/login_oppo
+{
+	"uid": "上面获取的openid",
+	"nick_name": "nickName",
+	"avatar": "avatar",
+	"sex": 1
+}
+```
